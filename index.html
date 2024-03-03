@@ -1,13 +1,880 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-  	Profile Pages
-  </body>
+
+    <link href="asset/asset/picture/logo.png" rel="shortcut icon">
+    <title>Watermelon</title>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+
+    <style>
+        @font-face {
+            font-family: 'Poppins';
+            src: url('font/Poppins-Regular.ttf');
+        }
+
+        @font-face {
+            font-family: 'Poppins-Bold';
+            src: url('font/Poppins-Bold.ttf');
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        b {
+            font-family: 'Poppins-Bold', sans-serif;
+        }
+
+        .photo-card {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+        }
+
+        .photo-card img {
+            transition: transform 0.3s ease;
+        }
+
+        .photo-card:hover img {
+            transform: scale(1.2);
+        }
+
+        .photo-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 15px;
+            text-align: center;
+            background-color: black;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand sticky-top" style="background-color: #DAFFCC;">
+        <div class="container-fluid align-item-start">
+            <a class="navbar-brand" href="#">
+                <img src="asset/picture/logo.png" width="10%">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Konten -->
+    <div style="background-image: url('asset/picture//background.jpg')">
+        <br><br><br>
+        <h5 class="text-center pt-5">Welcome</h5>
+        <h1 class="text-center pb-3" style="font-size: 90px;"><b>Choose Your Favorite</b></h1>
+        <h5 class="text-center pb-5">Any Title, with Any Genres</h5>
+        <br><br><br>
+    </div>
+
+    <br><br>
+
+    <div class="container-fluid">
+        <div class="row row-cols-4 justify-content-center mt-3">
+            <div class="col px-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#shopforModal">
+                    <div class="photo-card">
+                        <img src="asset/picture/shopfor.jpg" class="img-fluid" alt="...">
+                        <div class="photo-caption">A Shop For Killers</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col px-3 pb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#badandcrazyModal">
+                    <div class="photo-card">
+                        <img src="asset/picture/badandcrazy.jpg" class="img-fluid" alt="...">
+                        <div class="photo-caption">Bad and Crazy</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col px-3 pb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#dpModal">
+                    <div class="photo-card">
+                        <img src="asset/picture/dp.jpg" class="img-fluid" alt="...">
+                        <div class="photo-caption">D.P.</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col px-3 pb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#happinessModal">
+                    <div class="photo-card">
+                        <img src="asset/picture/happiness.jpg" class="img-fluid" alt="...">
+                        <div class="photo-caption">Happiness</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col px-3 pb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#cafeminamModal">
+                    <div class="photo-card">
+                        <img src="asset/picture/cafeminam.jpg" class="img-fluid" alt="...">
+                        <div class="photo-caption">Cafe Minamdang</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col px-3 pb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#drchaModal">
+                    <div class="photo-card">
+                        <img src="asset/picture/drcha.jpg" class="img-fluid" alt="...">
+                        <div class="photo-caption">Doctor Cha</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col px-3 pb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#waikikiModal">
+                    <div class="photo-card">
+                        <img src="asset/picture/waikiki.jpg" class="img-fluid" alt="...">
+                        <div class="photo-caption">Eulachacha Waikiki</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col px-3 pb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#1988Modal">
+                    <div class="photo-card">
+                        <img src="asset/picture/1988.jpg" class="img-fluid" alt="...">
+                        <div class="photo-caption">Reply 1988</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col px-3 pb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#18againModal">
+                    <div class="photo-card">
+                        <img src="asset/picture/18again.jpg" class="img-fluid" alt="...">
+                        <div class="photo-caption">18 Again</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col px-3 pb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#angelModal">
+                    <div class="photo-card">
+                        <img src="asset/picture/angel.jpg" class="img-fluid" alt="...">
+                        <div class="photo-caption">Angel's Last Mission: Love</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col px-3 pb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ghostdrModal">
+                    <div class="photo-card">
+                        <img src="asset/picture/ghostdr.jpg" class="img-fluid" alt="...">
+                        <div class="photo-caption">Ghost Doctor</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col px-3 pb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#hoteldelModal">
+                    <div class="photo-card">
+                        <img src="asset/picture/hoteldel.jpg" class="img-fluid" alt="...">
+                        <div class="photo-caption">Hotel del Luna</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col px-3 pb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#100dayModal">
+                    <div class="photo-card">
+                        <img src="asset/picture/100day.jpg" class="img-fluid" alt="...">
+                        <div class="photo-caption">100 Days My Prince</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col px-3 pb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#proposalModal">
+                    <div class="photo-card">
+                        <img src="asset/picture/proposal.jpeg" class="img-fluid" alt="...">
+                        <div class="photo-caption">A Business Proposal</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col px-3 pb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#rookieModal">
+                    <div class="photo-card">
+                        <img src="asset/picture/rookie.jpg" class="img-fluid" alt="...">
+                        <div class="photo-caption">Backstreet Rookie</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col px-3 pb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#firstModal">
+                    <div class="photo-card">
+                        <img src="asset/picture/first.jpg" class="img-fluid" alt="...">
+                        <div class="photo-caption">Because This is My First Life</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col px-3 pb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#summerModal">
+                    <div class="photo-card">
+                        <img src="asset/picture/summer.jpg" class="img-fluid" alt="...">
+                        <div class="photo-caption">Our Beloved Summer</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col px-3 pb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#worldModal">
+                    <div class="photo-card">
+                        <img src="asset/picture/world.jpg" class="img-fluid" alt="...">
+                        <div class="photo-caption">W : Two World Apart</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col px-3 pb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#crashModal">
+                    <div class="photo-card">
+                        <img src="asset/picture/crash.jpg" class="img-fluid" alt="...">
+                        <div class="photo-caption">Crash Landing on You</div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col px-3 pb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#goblinModal">
+                    <div class="photo-card">
+                        <img src="asset/picture/goblin.jpg" class="img-fluid" alt="...">
+                        <div class="photo-caption">Guardian: The Lonely and Great God</div>
+                    </div>
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <br>
+
+    <!-- All modal / nama button = nama img -->
+
+    <div class="modal fade modal-lg" id="shopforModal" tabindex="-1" aria-labelledby="shopforLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="shopforLabel"><b>A Shop For Killers</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Judul : A Shop for Killers</p>
+                    <p>Rating : 8.10/10</p>
+                    <p>Director : Lee Kwon, No Kyu-Yeob</p>
+                    <p>Writer : Kang Ji-Young, Lee Kwon, Ji Ho-Jin</p>
+                    <p>Episodes : 8</p>
+                    <p>Genres : Action, Thriller, Mystery, Drama</p>
+                    <p>Sinopsis : Ketika Jeong Ji-An masih kecil ibunya dibunuh oleh ayahnya dan ayahnya bunuh diri pada
+                        hari pemakaman neneknya. Jung Ji-An tiba-tiba ditinggalkan sendirian. Pamannya Jeong Ji-Man
+                        membawanya masuk dan mereka tinggal bersama. Saat membersarkan Jeong Ji-An, Jeong Ji-Man
+                        mengelola pusat perbelanjaan misterius. Jeong Ji An akhirnya mendaftar di universitas dan
+                        meninggalkan rumah pamannya. Dia mulai hidup sendiri. Suatu hari, Jeong Ji-An mendengar bahwa
+                        pamannya tiba-tiba meninggal. DIa kembali ke rumah pamannya, tempat dia tinggal bersamanya. DIa
+                        mengetahui identitas sebenarnya dari pusat perbelanjaan itu. Jeong Jin-Man berlari </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="badandcrazyModal" tabindex="-1" aria-labelledby="badandcrazyLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="badandcrazyLabel"><b>Bad and Crazy</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    </p>Judul : Bad and Crazy</p>
+                    </p>Rating : 8.10/10</p>
+                    </p>Director : Yoo Sun-Dong</p>
+                    </p>Writer : Ki Sae-Bom</p>
+                    </p>Episodes : 12</p>
+                    </p>Genres : Action, Thriller, Mystery, Fantasy</p>
+                    </p>Sinopsis : Mengisahkan mengenai pertarungan antara seorang pria bernama Soo Yeol yang dikenal
+                    kompeten dalam pekerjaannya dan K yang dianggap sebagai sosok yang gila dengan beberapa kartel
+                    narkoba. Soo Yeol sendiri merupakan seorang pria yang hanya lulus dari SMA namun dengan
+                    perjuangannya yang keras berhasil menjadi seorang perwira polisi. DIa bahkan berhasil menyelesaikan
+                    berbagai jenis pekerjaan dengan begitu baik. Namun sayangnya, dia hanya bisa mengerjakan kasus yang
+                    diminta oleh atasannya yang korup dan tidak peduli ketidakadila. Ketika dia memiliki rencana untuk
+                    keluar dan menjalani kehidupannya dengan berbeda, dia malah dipertemukan dengan K yang membuat
+                    perubahan besar dalam hidupnya.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="dpModal" tabindex="-1" aria-labelledby="dpLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="dpLabel"><b>D.P.</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Judul : D.P. </p>
+                    <p>Rating : 8.00/10 </p>
+                    <p>Director : Han Jun-Hee </p>
+                    <p>Writer : Kim Bo Tong, Han Jun-Hee </p>
+                    <p>Episodes : 6 </p>
+                    <p>Genres : Action </p>
+                    <p>Sinopsis : An Joo Ho adalah seorang tentara. Dia pendiam dan tenang, tapi tidak fleksibel. Sersan
+                        Park Beom-Goo memperhatikan kegigihan dan kemampuan Prajutri An Joon Ho ke D.P. Tim (Deserter
+                        Pursuit). Misi mereka adalah menangkap pembelot. An Joo Ho bekerja dengan Sersan Park Beom Goo
+                        dan Kopral Han Ho Yeol di tim. Sersan Park Beom Goo terlihat lelah sepanjang waktu. Dia mengutuk
+                        dan mengomel pada An Joon Ho dan Han Ho Yeol, tetapi dia juga merawat mereka dengan wawasannya
+                        yang tajam. Han Ho Yeol terkadang memberi pengatahuan investigasi kepada An Joon Ho, tapi
+                        terkadang dia mengganggunya. Sementara itu, Letnan Satu Im Ji Seob hanya peduli dengan
+                        kesuksesannya di militer. Dia tidak peduli dengan D.P.. tim </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="happinessModal" tabindex="-1" aria-labelledby="happinessLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="happinessLabel"><b>Happiness</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Judul : Happiness</p>
+                    <p>Rating : 8.60/10</p>
+                    <p>Director : Ahn Gil Ho</p>
+                    <p>Writer : Han Sang Woon</p>
+                    <p>Episodes : 12</p>
+                    <p>Genres : Action, Thriller, Drama, Fantasy</p>
+                    <p>Sinopsis : Menggambarkan pertempuran psikologis yang halus dan diskriminasi kelas yang terjadi.
+                        Kota ini mencapai titik terendah ketika kiamat yang akan datang menyerang dalam bentuk penyakit
+                        menular jenis baru dimana orang menderita kehausan yang tak kunjung reda.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="cafeminamModal" tabindex="-1" aria-labelledby="cafeminamLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="cafeminamLabel"><b>Cafe Minamdang</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Judul : Cafe Minamdang</p>
+                    <p>Rating : 8.70/10</p>
+                    <p>Director : Go Jae Hyun</p>
+                    <p>Writer : Park Hye Jin</p>
+                    <p>Episodes : 18</p>
+                    <p>Genres : Mystery, Comedy</p>
+                    <p>Sinopsis : Nam Han Joon adalah manta profiler kriminal yang sekarang bekerja sebagai penipu.
+                        Untuk penipuannya, dia menyamar sebagai peramal dan menjalankan toko peramal Minamdang. Dia
+                        menarik pelanggan dengan penampilan fisiknya yang menarik dan keterampilan berbicara yang
+                        lancar. Dia menipu pelanggannya demi uang, tetapi dia juga terlibat dalam kasus mereka dan
+                        membantu menyelesaikannya. Dia bahkan menyediakan layanan pelanggan untuk kliennya. Rekan Nam
+                        Han Joon adalah Soo Cheol dan Nam Hye Joon. Soo Cheol menjalankan agen detektif swasta dan Nam
+                        Hye Joon adalah adik perempuan Nam Han Joon. Dia adalah seorang hacker elit.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="drchaModal" tabindex="-1" aria-labelledby="drchaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="drchaLabel"><b>Doctor Cha</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Judul : Doctor Cha</p>
+                    <p>Rating : 8.00/10</p>
+                    <p>Director : Kim Dae Jin, Kim Jung Wook</p>
+                    <p>Writer : Jung Yeo Rang</p>
+                    <p>Episodes : 16</p>
+                    <p>Genres : Comedy, Drama, Medical</p>
+                    <p>Sinopsis : Cha Jung Sook menikah dengan Seo In Ho yang merupakan kepala operasi di rumah sakit
+                        Universitas. Seo In Ho merupakan orang yang strict, sensitif dan merupakan kepribadian yang
+                        teliti. Cha Jung Sook sudah menjadi ibu rumah tangga selama 20 tahun dan menyerah terhadap
+                        karirnya menjadi doktor semasa tahul residennya. 20 tahun usai meninggalkan karier medisnya, ibu
+                        rumah tangga ini kembali sebagai residen tahun pertama. Ia kesulitan dengan posisinya dalam
+                        pekerjaan yang penuh kejutan.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="waikikiModal" tabindex="-1" aria-labelledby="waikikiLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="waikikiLabel"><b>Eulachacha Waikiki</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Judul : Eulachacha Waikiki</p>
+                    <p>Rating : 8.70/10</p>
+                    <p>Director : Lee Chang Min</p>
+                    <p>Writer : Kim Ki Ho</p>
+                    <p>Episodes : 20</p>
+                    <p>Genres : Comedy, Drana, Life</p>
+                    <p>Sinopsis : Tiga pemuda yang sangat berbeda-Dong Goo, perwujudan nasib buruk yang bercita-cita
+                        menjadi sutradara film, Joon Ki, seorang aktor eksentrik yang tampil untuk mencari nafkah, dan
+                        Doo Shik, seorang penulis freelancer yang bermain-main di sekitar tidak melakukan apa-apa hampir
+                        sepanjang waktu. buka rumah tamu bernama “Waikiki” di Itaewon tempat banyak orang asing datang
+                        untuk tinggal. Meskipun mereka tidak memiliki petunjuk bagaimana menjalankannya, mereka ingin
+                        mendapatkan uang untuk membayar produksi film mendatang mereka.
+
+                        Bergabung dengan adik perempuan Dong Goo, Seo Jin, yang sebenarnya mengelola rumah tangga di
+                        Waikiki; ibu tunggal Yoon Ah, yang melakukan pendaratan tak terduga di wisma dengan bayi
+                        misteriusnya; dan mantan pacar Dong Goo, Soo Ah, mereka semua mulai hidup bersama dalam suasana
+                        yang tidak nyaman dan mencurigakan.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="1988Modal" tabindex="-1" aria-labelledby="1988Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="1988Label"><b>Reply 1988</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Judul : Reply 1988</p>
+                    <p>Rating : 9.00/10</p>
+                    <p>Director : Shin Won-Ho</p>
+                    <p>Writer : Lee Woo-Jun</p>
+                    <p>Episodes :20 </p>
+                    <p>Genres : Comedy, Youth, Family, Romance</p>
+                    <p>Sinopsis : Drama Korea Reply 1988 Sub Indo menceritakan tentang para sahabat yang bernama Duk
+                        Sun, Jung Hwan, Sun Woo dan Dong Ryong, mereka semua adalah siswa SMA satu sekolah di Korea
+                        Selatan, bagi mereka semua sudah dianggap sebagai seorang keluarga sendiri sampai masalah
+                        yang ada pada setiap temannya selalu diceritakan dan saling berbagi saran satu sama lain.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="18againModal" tabindex="-1" aria-labelledby="18againLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="18againLabel"><b>18 Again</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Judul : 18 Again</p>
+                    <p>Rating : 8.00/10</p>
+                    <p>Director : Ha Byung-hoon</p>
+                    <p>Writer : Ahn Eun-bin, Choi Yi-ryool, Kim Do-yeon</p>
+                    <p>Episodes : 16 </p>
+                    <p>Genres : Fantasy, Drama, Comedy, Romance</p>
+                    <p>Sinopsis : Jung Da-jung dan Hong Dae-young adalah pasangan menikah
+                        dengan dua anak. Tak lama setelah Da-jung mengajukan gugatan cerai, tubuh Dae-young yang berusia
+                        37 tahun berubah sampai dia terlihat seperti saat dia berusia 18 tahun (Lee Do-hyun). Dia mulai
+                        menjalani hidup baru dengan identitas baru dan mengejar mimpi yang belum pernah dia raih. Namun
+                        dalam tubuh remajanya, dia mengetahui anak perempuannya bekerja di toko kelontong tanpa seizin
+                        dirinya dan anak laki-lakinya menjadi korban kekerasan di sekolah. Maka dari itu, dia
+                        menggunakan kesempatan ini untuk lebih dekat dan melindungi anak-anaknya.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="angelModal" tabindex="-1" aria-labelledby="angelLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="angelLabel"><b>Angel's Last Mission: Love</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Judul : Angel's Last Mission: Love</p>
+                    <p>Rating : 8.60/10</p>
+                    <p>Director : Lee Jung-sub</p>
+                    <p>Writer : Choi Yoon-kyo</p>
+                    <p>Episodes : 32 </p>
+                    <p>Genres : Fantasy, Drama, Comedy, Romance, Supernatural</p>
+                    <p>Sinopsis : Lee Yeon-seo (Shin Hye-sun) adalah balerina yang sangat berbakat dan sukses dengan
+                        Fantasia Ballet Company milik keluarganya, tetapi mengalami kecelakaan yang membuatnya buta. Dia
+                        galak dan kasar terhadap stafnya, termasuk sekretaris dan kepala pelayannya yang setia,
+                        keluarganya yang berkomplot, dan semua orang. Dan (Kim Myung-soo) adalah malaikat yang optimis
+                        dan riang yang selalu mendapat masalah. Untuk kembali ke surga, ia diberikan misi yang tampaknya
+                        mustahil untuk menemukan cinta sejati untuk Yeon-Seo, tetapi akhirnya ia malah jatuh cinta
+                        padanya.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="ghostdrModal" tabindex="-1" aria-labelledby="ghostdrLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="ghostdrLabel"><b>Ghost Doctor</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Judul : Ghost Doctor</p>
+                    <p>Rating : 8.00/10</p>
+                    <p>Director : Boo Seong-cheol</p>
+                    <p>Writer : Kim Sun-soo</p>
+                    <p>Episodes : 16 </p>
+                    <p>Genres : Fantasy, Drama, Medical, Supernatural</p>
+                    <p>Sinopsis : Seri ini berkisah tentang dua dokter dengan latar belakang yang sangat berbeda, dengan
+                        kepribadian dan keahlian medis yang sangat bertolak belakang: Cha Young Min (Rain) adalah
+                        seorang dokter jenius, dengan keterampilan bedah yang mumpuni dalam kardiotoraks, namun ia
+                        sombong dan egois, serta Seung-tak (Kim-Bum), yang meskipun memiliki pengetahuan medis yang
+                        sangat baik, ketakutannya akan darah membuatnya jatuh tertinggal dari rekan sejawatnya dalam hal
+                        praktek kedokteran. Suatu hari, Young Min terlibat dalam kasus tak terduga, dan karenanya,
+                        rohnya merasuki tubuh Seung Tak.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="hoteldelModal" tabindex="-1" aria-labelledby="hoteldelLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="hoteldelLabel"><b>Hotel del Luna</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Judul : Hotel del Luna</p>
+                    <p>Rating : 8.80/10</p>
+                    <p>Director : Oh Choong-hwan</p>
+                    <p>Writer : Hong Jung-eun, Hong Mi-ran</p>
+                    <p>Episodes : 16 </p>
+                    <p>Genres : Fantasy, Comedy, Mystery, Supernatural, Horror</p>
+                    <p>Sinopsis : Hotel Del Luna yang berlokasi di Seoul, tidak seperti hotel lain: semua tamunya adalah
+                        hantu. Jang Man-wol (Lee Ji-eun), yang terjebak di hotel tersebut selama bertahun-tahun, bertemu
+                        dengan Koo Chan-seong (Yeo Jin-goo), seorang manajer hotel baru. Bersama-sama mereka akan
+                        membuka rahasia kelam yang telah lama terpendam yang membuat Jang Man-wol terjebak di Hotel Del
+                        Luna selama 1.300 tahun.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="100dayModal" tabindex="-1" aria-labelledby="100dayLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="100dayLabel"><b>100 Days My Prince</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Judul : 100 Days My Prince</p>
+                    <p>Rating : 9.50/10</p>
+                    <p>Director : Lee Jong-jae</p>
+                    <p>Writer : No Ji-sul</p>
+                    <p>Episodes : 16 </p>
+                    <p>Genres : Romance, Historical, Comedy</p>
+                    <p>Sinopsis : Putra mahkota Lee Yul (Do Kyung-soo) adalah orang yang perfeksionis dan mengabaikan
+                        sebagian besar orang di istana kerajaan dan tampaknya bersikap dingin dan menuntut, padahal pada
+                        kenyataannya, dia sangat kesepian. Ia kemudian mengesahkan Undang-Undang tentang semua perempuan
+                        diharuskan menikah sebelum mereka mencapai usia 28 tahun. Hong Shim (Nam Ji-hyun) adalah kepala
+                        agen detektif pertama di Joseon, seorang tokoh yang kuat dan cerdas yang melakukan banyak
+                        pekerjaan untuk menghidupi dirinya dan juga ayahnya. Ia juga merupakan perempuan tertua yang
+                        belum menikah di desanya, dan mulai mencari suami untuk menghindari masalah dengan pejabat hukum
+                        kerajaan. Keduanya dipertemukan setelah Lee Yool mengalami percobaan pembunuhan dan lupa
+                        ingatan.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="proposalModal" tabindex="-1" aria-labelledby="proposalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="proposalLabel"><b>A Business Proposal</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Judul : A Business Proposal</p>
+                    <p>Rating : 9.00/10</p>
+                    <p>Director : Park Sun-ho</p>
+                    <p>Writer : Han Sul-hee, Hong Bo-hee</p>
+                    <p>Episodes : 12 </p>
+                    <p>Genres : Romance, Comedy</p>
+                    <p>Sinopsis : Shin Ha-ri (Kim Se-jeong) melakukan kencan buta dengan menyamar sebagai temannya
+                        dengan tujuan 'ditolak' oleh calon pasangan temannya. Tapi rencana menjadi kacau ketika orang
+                        yang dia temui ternyata adalah Kang Tae-mu (Ahn Hyo-seop) –CEO perusahaan tempat Ha-ri bekerja.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="rookieModal" tabindex="-1" aria-labelledby="rookieLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="rookieLabel"><b>Backstreet Rookie</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Judul : Backstreet Rookie</p>
+                    <p>Rating : 8.20/10</p>
+                    <p>Director : Myoungwoo Lee</p>
+                    <p>Writer : Son Geun-joo</p>
+                    <p>Episodes : 16 </p>
+                    <p>Genres : Romance, Comedy, Slice of Life</p>
+                    <p>Sinopsis :
+                        Choi Dae-hyun (Ji Chang-wook) adalah seorang pria berusia 29 tahun yang memiliki wajah tampan,
+                        tapi ceroboh. Setelah berpindah-pindah tempat kerja selama beberapa tahun terakhir, dia
+                        memutuskan untuk menjalankan bisnis sebuah toko serba ada. Suatu hari, Dae-hyun dipertemukan
+                        dengan Jung Saet-byul (Kim Yoo-jung) yang melamar sebagai pekerja paruh waktu di toko serba ada
+                        yang ia jalankan. Saet-byul adalah seorang gadis berusia 22 tahun yang mempunyai kepribadian
+                        unik. Ia bertekad ingin melupakan masa lalunya yang suram dan bersiap untuk memulai lembaran
+                        baru sebagai wanita muda yang menjunjung tinggi keadilan.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="firstModal" tabindex="-1" aria-labelledby="firstLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="firstLabel"><b>Because This is My First Life</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Judul : Because This is My First Life</p>
+                    <p>Rating : 8.70/10</p>
+                    <p>Director : Park Joon-hwa</p>
+                    <p>Writer : Yoon Nan-joong</p>
+                    <p>Episodes : 16 </p>
+                    <p>Genres : Romance, Comedy, Slice of Life</p>
+                    <p>Sinopsis :
+                        Bercerita tentang Nam Se-hee (Lee Min-ki) yang menghabiskan uangnya untuk rumah dan Yoon Ji-ho
+                        (Jung So-min) yang tidak memiliki tempat tinggal, keduanya belum menikah di usia tiga puluhan,
+                        mulai hidup bersama sebagai teman serumah.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="summerModal" tabindex="-1" aria-labelledby="summerLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="summerLabel"><b>Our Beloved Summer</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Judul : Our Beloved Summer</p>
+                    <p>Rating : 8.70/10</p>
+                    <p>Director : Kim Yoon-jin</p>
+                    <p>Writer : Lee Na-eun</p>
+                    <p>Episodes : 16 </p>
+                    <p>Genres : Romance, Comedy, Drama</p>
+                    <p>Sinopsis :
+                        Berkisah tentang Choi Ung dan Kook Yeon Su yang dulunya sempat disatukan dalam sebuah dokumenter
+                        kehidupan dua siswa dengan karakter berbeda. Namun setelah bertahun-tahun keduanya kembali
+                        dipertemukan dan menggarap dokumenter yang sama
+                        membahas mengenai perjalanan mereka dengan profesi yang sekarang.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="worldModal" tabindex="-1" aria-labelledby="worldLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="worldLabel"><b>W : Two World Apart</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Judul : W : Two World Apart</p>
+                    <p>Rating : 9.10/10</p>
+                    <p>Director : Jung Jae-yoon</p>
+                    <p>Writer : Song Jae-jung</p>
+                    <p>Episodes : 16 </p>
+                    <p>Genres : Romance, Fantasy, Drama, Action</p>
+                    <p>Sinopsis :
+                        Oh Yeon-joo (Han Hyo-joo) adalah seorang dokter bedah jantung yang ayahnya adalah seorang
+                        pencipta buku komik terkenal.</p>
+
+                    <p>Suatu hari, ayahnya menghilang dan dia bergegas ke rumah sekaligus tempat kerja ayahnya untuk
+                        mencarinya. Namun, bukannya mencari ayahnya, dia menemukan dirinya di tempat yang berbeda di
+                        depan seorang pria bernama Kang Cheol (Lee Jong-suk) yang terbaring di lantai dan bernoda darah.
+                        Ternyata Yeon-joo pergi ke dimensi yang berbeda; dalam dunia komik dan bertemu dengan tokoh
+                        fiksi, Kang Cheol, tokoh utama dari serial komik ayah Yeon-joo.</p>
+
+                    <p>Ketika ayah Yeon-joo memutuskan untuk membunuh karakter Kang Cheol di cerita, Yeon-joo
+                        menyelamatkan Kang Cheol.</p>
+
+                    <p>Setelah menyelamatkan hidup Kang Cheol, ia menjadi tertarik padanya dan merasa bahwa dia adalah
+                        kunci untuk hidupnya. Seiring dengan berjalannya waktu, Yeon-joo mulai percaya bahwa Kang Cheol
+                        masih hidup dan dia ingin melindungi Kang Cheol dari ayahnya yang mencoba untuk membunuh
+                        karakter Kang Cheol ini. Oleh karena itu, kisah cinta antara seorang wanita dari dunia nyata dan
+                        seorang pria dari dunia komik dimulai.</p>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="crashModal" tabindex="-1" aria-labelledby="crashLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="crashLabel"><b>Crash Landing on You</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Judul : Crash Landing on You</p>
+                    <p>Rating : 9.00/10</p>
+                    <p>Director : Lee Jeong-hyo</p>
+                    <p>Writer : Park Ji-eun</p>
+                    <p>Episodes : 16 </p>
+                    <p>Genres : Romance, Comedy, Military, Political</p>
+                    <p>Sinopsis :
+                        Yoon Se-ri (Son Ye-jin) adalah seorang pewaris konglomerat di Korea Selatan. Suatu hari, saat
+                        paralayang, kecelakaan yang disebabkan oleh angin kencang membuat Se-ri melakukan pendaratan
+                        darurat di Korea Utara. Di sana, ia bertemu dengan Ri Jeong-hyuk (Hyun Bin), seorang perwira
+                        tinggi Korea Utara. Jung-hyeok mencoba untuk melindungi dan menyembunyikannya. Segera setelah
+                        itu, ia jatuh cinta dengan Se-ri.</p>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="goblinModal" tabindex="-1" aria-labelledby="goblinLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="goblinLabel"><b>Guardian: The Lonely and Great God</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Judul : Guardian: The Lonely and Great God</p>
+                    <p>Rating : 9.00/10</p>
+                    <p>Director : Lee Eun-bok</p>
+                    <p>Writer : Kim Eun-sook</p>
+                    <p>Episodes : 19 </p>
+                    <p>Genres : Romance, Comedy, Supernatural, Melodrama</p>
+                    <p>Sinopsis :
+                        Kim Shin pernah menjadi jenderal tak terkalahkan di militer Goryeo yang meninggal secara tragis.
+                        Dia sekarang memiliki keabadian, tetapi lelah hidup sementara semua orang di sekitarnya mati.
+                        Selama 900 tahun, Kim Shin telah mencari pengantennya, seorang manusia yang bisa mencabut pedang
+                        dan mengakhiri hidupnya. Suatu hari, ia bertemu Ji Eun Tak, seorang siswa sekolah menengah yang
+                        positif dan optimis yang dapat melihat orang mati dan telah melalui peristiwa tragis, namun
+                        tetap kuat. Dia mengaku sebagai pengantin wanita Goblin, yang bisa mengakhiri hidupnya yang
+                        abadi, tetapi apa yang tampaknya menjadi tugas yang mudah, hanya menjadi rumit, karena
+                        keduanya jatuh cinta.</p>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- all modal end -->
+
+    <script src="asset/"></script>
+</body>
+
 </html>
